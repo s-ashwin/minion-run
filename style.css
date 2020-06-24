@@ -32,6 +32,7 @@ body{
     height: 300px;
     position: relative;
     overflow-x: hidden;
+    overflow-x: hidden;
 }
 .ground{
     height: 25px;
