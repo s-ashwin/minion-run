@@ -33,6 +33,7 @@ body{
     position: relative;
     overflow-x: hidden;
     overflow-x: hidden;
+    overflow: -moz-scrollbars-none;
 }
 .ground{
     height: 25px;
