@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.logo{
+    width: 500px;
+    height: 90px;
+   
+}
+.head{
+    flex: 0 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body{
+    background-color: #F0DF87;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -50;
+}
+.game{
+    width: 700px;
+    height: 300px;
+    position: relative;
+    overflow-x: hidden;
+}
+.ground{
+    height: 25px;
+    width: 100%;
+    position: absolute;
+    bottom: 100%;
+
+    z-index: -10;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+    background-color:  hsl(40, 89%, 49%);
+    
+    
+}
+.land{
+    width: 95%;
+    height: fit-content;
+    background-color: hsl(40, 89%, 59%);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  
+}
+.score{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 40px;
+    width: 25%;
+    margin: 0 auto;
+    font-size: 12px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0px -2px 5px hsl(40, 89%, 39%);
+}
+.score{
+    display: none;
+}
+.sta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.en{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#char{
+    width: 70px;
+    height: 150px;
+  
+    position: absolute;
+    top: 150px;
+    
+}
+img{
+    height: 100%;
+}
+.block{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 250px;
+    left: 650px;
+ 
+}
+.move{
+       
+    animation: block 1s infinite linear;
+}
+.animate{
+    animation: jump 500ms;
+}
+@keyframes block {
+    0%{left: 700px;}
+    100%{left: -50px;}
+}
+@keyframes jump {
+    0%{top: 150px;}
+    30%{top: 80px;}
+    70%{top: 80px;}
+    100%{top: 150px;}
+}
+button{
+    height: 50px;
+    width: 110px;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 35px;
+    border: none;
+    box-shadow: 0px -2px 5px hsl(40, 89%, 39%);
+    margin-bottom: 10px;
+    
+}
+.intro{
+    padding: 20px 0px;
+    text-align: center;
+    color: black;
+    text-shadow: 0px -2px 5px hsl(40, 89%, 40%);
+    
+}
+.fa{display: none;}
+button:focus{
+    outline: none;
+}
+.lost{
+    height: fit-content;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 0px -2px 5px hsl(40, 89%, 40%);
+    
+}
+.en{
+    display: none;
+}
+@media only screen and (max-width:699px){
+    html,body{
+        min-height: 100% !important;
+        width: 100% !important;
+    }
+    .game{
+        width: 320px;
+        height: 300px;
+        overflow-x: hidden;
+    }
+    .logo{
+        width: 300px;
+        height: 55px;
+       
+    }
+    .block{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 250px;
+        left: 270px;
+     
+    }
+    @keyframes block {
+        0%{left: 320px;}
+        100%{left: -50px;}
+        
+    }
+    @keyframes jump {
+        0%{top: 150px;}
+        30%{top: 80px;}
+        70%{top: 80px;}
+        100%{top: 150px;}
+        
+    }
+    .en{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .en{
+        display: none;
+    }
+    .lost{
+        height: fit-content;
+    }
+    .intro{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-height:540px){
+ body div *{
+     display: none;
+ }
+
+ body{
+    
+ }
+ body p{
+     position: absolute;
+ }
+ body p::after{
+     
+     content: "Unsupported Device";
+     
+ }
+
+}

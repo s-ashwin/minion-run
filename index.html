@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minion Run</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body onclick="jump()">
+    <p></p>
+    <div class="head">
+   <img src="l.png" alt="" class="logo">
+</div>
+    <div class="game" onclick="jump()" >
+        
+        <div id="char">
+            <img class="run" src="min.png" alt="">
+            <img src="lost.png" alt="" class="fa">
+        </div>
+        <div class="block">
+            <img src="ban.png" alt="">
+        </div>
+        
+    </div>
+    <div class="land">
+        <div class="ground"></div>
+        <div class="score"> <p class="card"> SCORE:</p> <p class="dig">0</p> </div>
+        <div class="sta">
+        <p class="intro">Help Minion To Jump Over The Obstacles By Tapping Anywhere On The Screen</p>
+        <button class="strt" onclick="start()">START</button>
+    </div>
+    <div class="en">
+        <p class="lost">You Lose</p>
+        <button class="strt" onclick="retry()">RETRY</button>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
