@@ -15,9 +15,9 @@
 </div>
     <div class="game" onclick="jump()" >
         
-        <div id="char">
-            <img class="run" src="img/min.png" alt="">
-            <img src="img/lost.png" alt="" class="fa">
+        <div id="character">
+            <img class="runimg" src="img/min.png" alt="">
+            <img src="img/lost.png" alt="" class="lostimg">
         </div>
         <div class="block">
             <img src="img/ban.png" alt="">
@@ -26,15 +26,18 @@
     </div>
     <div class="land">
         <div class="ground"></div>
-        <div class="score"> <p class="card"> SCORE:</p> <p class="dig">0</p> </div>
-        <div class="sta">
-        <p class="intro">Help Minion To Jump Over The Obstacles By Tapping Anywhere On The Screen</p>
-        <button class="strt" onclick="start()">START</button>
-    </div>
-    <div class="en">
-        <p class="lost">You Lose</p>
-        <button class="strt" onclick="retry()">RETRY</button>
-    </div>
+
+        <div class="score"> <p class="card"> SCORE:</p> <p class="digit">0</p> </div>
+
+        <div class="start">
+            <p class="intro">Help Minion To Jump Over The Obstacles By Tapping Anywhere On The Screen</p>
+            <button class="btn" onclick="start()">START</button>
+        </div>
+
+        <div class="end">
+            <p class="lost">You Lose</p>
+            <button class="btn" onclick="retry()">RETRY</button>
+        </div>
 </div>
     <script src="app.js"></script>
 </body>

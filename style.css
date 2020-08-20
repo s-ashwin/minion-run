@@ -77,25 +77,23 @@ body{
 .score{
     display: none;
 }
-.sta{
+.start{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.en{
+.end{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-#char{
+#character{
     width: 70px;
     height: 150px;
-  
     position: absolute;
     top: 150px;
-    
 }
 img{
     height: 100%;
@@ -143,7 +141,9 @@ button{
     text-shadow: 0px -2px 5px hsl(40, 89%, 40%);
     
 }
-.fa{display: none;}
+.lostimg{
+    display: none;
+}
 button:focus{
     outline: none;
 }
@@ -154,7 +154,7 @@ button:focus{
     text-shadow: 0px -2px 5px hsl(40, 89%, 40%);
     
 }
-.en{
+.end{
     display: none;
 }
 @media only screen and (max-width:699px){
@@ -192,14 +192,14 @@ button:focus{
         100%{top: 150px;}
         
     }
-    .en{
+    .end{
         
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .en{
+    .end{
         display: none;
     }
     .lost{
@@ -212,10 +212,6 @@ button:focus{
 @media only screen and (max-height:540px){
  body div *{
      display: none;
- }
-
- body{
-    
  }
  body p{
      position: absolute;
